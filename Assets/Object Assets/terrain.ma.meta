@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 2c4e3b28858bf254e816c51e92d42759
+timeCreated: 1478460778
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: FinalScene:GATE1:GATE:pSphere4
+    100002: FinalScene:GATE1:HOUSUU
+    100004: FinalScene:polySurface516
+    100006: FinalScene:polySurface541
+    100008: FinalScene:polySurface542
+    100010: FinalScene:polySurface543
+    100012: FinalScene:polySurface544
+    100014: FinalScene:polySurface545
+    100016: FinalScene:polySurface546
+    100018: FinalScene:polySurface547
+    100020: FinalScene:polySurface548
+    100022: FinalScene:polySurface549
+    100024: FinalScene:polySurface550
+    100026: FinalScene:polySurface551
+    100028: FinalScene:polySurface552
+    100030: FinalScene:polySurface553
+    100032: FinalScene:polySurface561
+    100034: FinalScene:polySurface562
+    100036: FinalScene:pSphere4
+    100038: FinalScene:pSphere5
+    100040: FinalScene:stairs1:polySurface60
+    100042: FinalScene:transform297
+    100044: FinalScene:transform298
+    100046: FinalScene:transform299
+    100048: FinalScene:transform300
+    100050: FinalScene:transform301
+    100052: FinalScene:transform302
+    100054: FinalScene:transform303
+    100056: FinalScene:transform304
+    100058: FinalScene:transform305
+    100060: FinalScene:transform306
+    100062: FinalScene:transform307
+    100064: FinalScene:transform308
+    100066: FinalScene:transform309
+    100068: FinalScene:transform310
+    100070: FinalScene:transform312
+    100072: FinalScene:transform313
+    100074: FinalScene:transform314
+    100076: MOUNTAIN_TERRAIN
+    100078: polySurface1
+    100080: polySurface2
+    100082: polySurface22
+    100084: polySurface3
+    100086: pPlane1
+    100088: //RootNode
+    100090: transform1
+    400000: FinalScene:GATE1:GATE:pSphere4
+    400002: FinalScene:GATE1:HOUSUU
+    400004: FinalScene:polySurface516
+    400006: FinalScene:polySurface541
+    400008: FinalScene:polySurface542
+    400010: FinalScene:polySurface543
+    400012: FinalScene:polySurface544
+    400014: FinalScene:polySurface545
+    400016: FinalScene:polySurface546
+    400018: FinalScene:polySurface547
+    400020: FinalScene:polySurface548
+    400022: FinalScene:polySurface549
+    400024: FinalScene:polySurface550
+    400026: FinalScene:polySurface551
+    400028: FinalScene:polySurface552
+    400030: FinalScene:polySurface553
+    400032: FinalScene:polySurface561
+    400034: FinalScene:polySurface562
+    400036: FinalScene:pSphere4
+    400038: FinalScene:pSphere5
+    400040: FinalScene:stairs1:polySurface60
+    400042: FinalScene:transform297
+    400044: FinalScene:transform298
+    400046: FinalScene:transform299
+    400048: FinalScene:transform300
+    400050: FinalScene:transform301
+    400052: FinalScene:transform302
+    400054: FinalScene:transform303
+    400056: FinalScene:transform304
+    400058: FinalScene:transform305
+    400060: FinalScene:transform306
+    400062: FinalScene:transform307
+    400064: FinalScene:transform308
+    400066: FinalScene:transform309
+    400068: FinalScene:transform310
+    400070: FinalScene:transform312
+    400072: FinalScene:transform313
+    400074: FinalScene:transform314
+    400076: MOUNTAIN_TERRAIN
+    400078: polySurface1
+    400080: polySurface2
+    400082: polySurface22
+    400084: polySurface3
+    400086: pPlane1
+    400088: //RootNode
+    400090: transform1
+    2300000: polySurface1
+    2300002: polySurface2
+    2300004: polySurface22
+    2300006: polySurface3
+    2300008: pPlane1
+    3300000: polySurface1
+    3300002: polySurface2
+    3300004: polySurface22
+    3300006: polySurface3
+    3300008: pPlane1
+    4300000: pPlane1
+    4300002: polySurface1
+    4300004: polySurface2
+    4300006: polySurface3
+    4300008: polySurface22
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

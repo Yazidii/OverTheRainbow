@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: 23c09b7accd08c343994d007384bedb1
+timeCreated: 1477246308
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: lil_guy16:Head
+    100002: lil_guy16:Hips
+    100004: lil_guy16:joint1
+    100006: lil_guy16:joint2
+    100008: lil_guy16:joint3
+    100010: lil_guy16:joint4
+    100012: lil_guy16:joint6
+    100014: lil_guy16:joint6 1
+    100016: lil_guy16:joint7
+    100018: lil_guy16:joint7 1
+    100020: lil_guy16:joint8
+    100022: lil_guy16:joint8 1
+    100024: lil_guy16:joint9
+    100026: lil_guy16:joint9 1
+    100028: lil_guy16:LeftElbow
+    100030: lil_guy16:LeftFinger
+    100032: lil_guy16:LeftHand
+    100034: lil_guy16:LeftLeg
+    100036: lil_guy16:LeftShoulder
+    100038: lil_guy16:LeftShoulderBlade
+    100040: lil_guy16:LeftWrist
+    100042: lil_guy16:Neck
+    100044: lil_guy16:PaperMan
+    100046: lil_guy16:Paperman
+    100048: lil_guy16:RightElbow
+    100050: lil_guy16:RightFinger
+    100052: lil_guy16:RightHand
+    100054: lil_guy16:RightLeg
+    100056: lil_guy16:RightShoulder
+    100058: lil_guy16:RightShoulderBlade
+    100060: lil_guy16:RightWrist
+    100062: lil_guy16:transform3
+    100064: //RootNode
+    400000: lil_guy16:Head
+    400002: lil_guy16:Hips
+    400004: lil_guy16:joint1
+    400006: lil_guy16:joint2
+    400008: lil_guy16:joint3
+    400010: lil_guy16:joint4
+    400012: lil_guy16:joint6
+    400014: lil_guy16:joint6 1
+    400016: lil_guy16:joint7
+    400018: lil_guy16:joint7 1
+    400020: lil_guy16:joint8
+    400022: lil_guy16:joint8 1
+    400024: lil_guy16:joint9
+    400026: lil_guy16:joint9 1
+    400028: lil_guy16:LeftElbow
+    400030: lil_guy16:LeftFinger
+    400032: lil_guy16:LeftHand
+    400034: lil_guy16:LeftLeg
+    400036: lil_guy16:LeftShoulder
+    400038: lil_guy16:LeftShoulderBlade
+    400040: lil_guy16:LeftWrist
+    400042: lil_guy16:Neck
+    400044: lil_guy16:PaperMan
+    400046: lil_guy16:Paperman
+    400048: lil_guy16:RightElbow
+    400050: lil_guy16:RightFinger
+    400052: lil_guy16:RightHand
+    400054: lil_guy16:RightLeg
+    400056: lil_guy16:RightShoulder
+    400058: lil_guy16:RightShoulderBlade
+    400060: lil_guy16:RightWrist
+    400062: lil_guy16:transform3
+    400064: //RootNode
+    4300000: lil_guy16:Paperman
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: lil_guy16:Paperman
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: lil_guy16:joint1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:LeftLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:RightLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint6
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint6 1
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint7
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint7 1
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:joint3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:LeftShoulderBlade
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:RightShoulderBlade
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:LeftElbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:RightElbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:LeftWrist
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:RightWrist
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lil_guy16:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: MainCharRigged(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:Paperman
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:PaperMan
+      position: {x: -0.00049238646, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 48.850647, y: 48.850647, z: 48.850647}
+      transformModified: 1
+    - name: lil_guy16:Hips
+      position: {x: -0, y: 0.01787359, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:transform3
+      position: {x: -0, y: -0.01787359, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint1
+      position: {x: -0.00006723117, y: 0.018426513, z: 0.00037557413}
+      rotation: {x: 0.7026597, y: -0.71152604, z: 0.0000003726059, w: -0.00000037730752}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint2
+      position: {x: -0.0037638515, y: 4.510281e-19, z: -0.00030037228}
+      rotation: {x: 0.9998186, y: -0.010813235, z: -0.015675945, w: -0.000027027083}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint3
+      position: {x: -0.0034129536, y: -0.0000045861234, z: -6.9950574e-20}
+      rotation: {x: 0.99691033, y: -0.009778302, z: 0.077937454, w: -0.00005593059}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint4
+      position: {x: -0.00338328, y: -1.3183898e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5810162, w: 0.81389207}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftShoulder
+      position: {x: 0.00063603994, y: 0.00047422352, z: -9.416293e-10}
+      rotation: {x: 0.94755185, y: 0.31960216, z: -0.00000004610997, w: 0.000000026121132}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftShoulderBlade
+      position: {x: 0.0009152498, y: 0.000000059378472, z: 0}
+      rotation: {x: 0.000048989354, y: -0.00042836688, z: 0.21187046, w: 0.97729766}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftElbow
+      position: {x: 0.0051303133, y: -0.000075491494, z: -0.00006587524}
+      rotation: {x: 0, y: -0, z: -0.026712505, w: 0.99964315}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftWrist
+      position: {x: 0.0057889377, y: -0.0000015851803, z: -1.179612e-18}
+      rotation: {x: 0, y: -0, z: -0.01113273, w: 0.9999381}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftHand
+      position: {x: 0.0009945977, y: 0.000000045748624, z: -6.938894e-20}
+      rotation: {x: 0, y: 0, z: 0.029727194, w: 0.9995581}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftFinger
+      position: {x: 0.00095984, y: -0.000000004497722, z: -6.9388935e-19}
+      rotation: {x: 0, y: -0, z: -0.018063443, w: 0.99983686}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:Neck
+      position: {x: -0.00013, y: 0.00089, z: -0.00024}
+      rotation: {x: 0.82230777, y: -0.5556755, z: 0.102728225, w: 0.06694444}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:Head
+      position: {x: -0.007085985, y: -0.000000063329935, z: -0.000000011059456}
+      rotation: {x: 0.000000011175868, y: -0.000000009313224, z: 0.6014918, w: 0.7988791}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightShoulder
+      position: {x: -0.0007933591, y: 0, z: -3.4694467e-19}
+      rotation: {x: -0.000000004377177, y: 0.000000096455295, z: -0.00495833, w: 0.9999878}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightShoulderBlade
+      position: {x: -0.0009152723, y: 4.440892e-18, z: 2.7755575e-19}
+      rotation: {x: 0.00054949307, y: -0.0048077772, z: 0.20657603, w: 0.97841865}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightElbow
+      position: {x: -0.0051303124, y: 0.0000754808, z: 0.00026086843}
+      rotation: {x: 0, y: -0, z: -0.026712505, w: 0.99964315}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightWrist
+      position: {x: -0.0057889563, y: 0.0000015407579, z: 0.00013706161}
+      rotation: {x: 0, y: -0, z: -0.01113273, w: 0.9999381}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightHand
+      position: {x: -0.0009945934, y: 0, z: -1.3877787e-19}
+      rotation: {x: 0, y: 0, z: 0.029727194, w: 0.9995581}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightFinger
+      position: {x: -0.0009598463, y: -4.440892e-18, z: -1.3877787e-19}
+      rotation: {x: 0, y: -0, z: -0.018063443, w: 0.99983686}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:LeftLeg
+      position: {x: 0.0009900852, y: 0.0009460061, z: 1.9915476e-11}
+      rotation: {x: -0.00004864393, y: 0.05569049, z: -0.026173472, w: 0.998105}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint6
+      position: {x: 0.007994962, y: 0.0001081912, z: 0.0011361267}
+      rotation: {x: 0.00019906237, y: -0.019207597, z: 0.00476523, w: 0.99980414}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint7
+      position: {x: 0.009184885, y: 0.00036841902, z: 0.00036000728}
+      rotation: {x: -0.6417948, y: -0.42692447, z: 0.34153593, w: -0.5377622}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint8
+      position: {x: 0.0010055258, y: -0.00019258441, z: -0.00006855131}
+      rotation: {x: 0.00000001481701, y: -0.0000000015814129, z: -0.10612682, w: 0.99435264}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint9
+      position: {x: 0.0016262251, y: -0.00028621766, z: -0.0000042678657}
+      rotation: {x: -0.4802119, y: 0.5190342, z: 0.51297224, w: -0.48668212}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:RightLeg
+      position: {x: 0.00096604554, y: -0.00097053766, z: -6.938894e-20}
+      rotation: {x: -0.01365666, y: 0.99835473, z: 0.00074695953, w: -0.055685513}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint6 1
+      position: {x: -0.007994947, y: -0.00010818783, z: -0.0011361255}
+      rotation: {x: 0.00019906237, y: -0.019207597, z: 0.00476523, w: 0.99980414}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint7 1
+      position: {x: -0.0091905445, y: -0.0000017223819, z: -0.00043791035}
+      rotation: {x: -0.6417959, y: -0.4269255, z: 0.34153482, w: -0.53776073}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint8 1
+      position: {x: -0.0010055273, y: 0.00019258502, z: 0.000068551235}
+      rotation: {x: 0, y: -0, z: -0.10612682, w: 0.99435264}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lil_guy16:joint9 1
+      position: {x: -0.0016262227, y: 0.00028621702, z: 0.0000042680103}
+      rotation: {x: -0.4802119, y: 0.5190342, z: 0.51297224, w: -0.48668212}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

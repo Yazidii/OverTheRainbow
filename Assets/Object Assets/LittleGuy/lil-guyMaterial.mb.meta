@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 6bf9978340d950b40ba8ea283601f98d
+timeCreated: 1478695061
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: FrightFoot
+    100002: Head
+    100004: Hips
+    100006: ikHandle1
+    100008: ikHandle2
+    100010: joint1
+    100012: joint2
+    100014: joint3
+    100016: joint4
+    100018: joint6
+    100020: joint6 1
+    100022: joint7
+    100024: joint7 1
+    100026: joint8
+    100028: joint8 1
+    100030: joint9
+    100032: joint9 1
+    100034: LeftElbow
+    100036: LeftFinger
+    100038: LeftFoot
+    100040: LeftHand
+    100042: LeftLeg
+    100044: LeftShoulder
+    100046: LeftShoulderBlade
+    100048: LeftWrist
+    100050: //RootNode
+    100052: lil_guy16:FrightFoot
+    100054: lil_guy16:Head
+    100056: lil_guy16:Hips
+    100058: lil_guy16:ikHandle1
+    100060: lil_guy16:ikHandle2
+    100062: lil_guy16:joint1
+    100064: lil_guy16:joint2
+    100066: lil_guy16:joint3
+    100068: lil_guy16:joint4
+    100070: lil_guy16:joint6
+    100072: lil_guy16:joint6 1
+    100074: lil_guy16:joint7
+    100076: lil_guy16:joint7 1
+    100078: lil_guy16:joint8
+    100080: lil_guy16:joint8 1
+    100082: lil_guy16:joint9
+    100084: lil_guy16:joint9 1
+    100086: lil_guy16:LeftElbow
+    100088: lil_guy16:LeftFinger
+    100090: lil_guy16:LeftFoot
+    100092: lil_guy16:LeftHand
+    100094: lil_guy16:LeftLeg
+    100096: lil_guy16:LeftShoulder
+    100098: lil_guy16:LeftShoulderBlade
+    100100: lil_guy16:LeftWrist
+    100102: lil_guy16:Neck
+    100104: lil_guy16:PaperMan
+    100106: lil_guy16:Paperman
+    100108: lil_guy16:RightElbow
+    100110: lil_guy16:RightFinger
+    100112: lil_guy16:RightHand
+    100114: lil_guy16:RightLeg
+    100116: lil_guy16:RightShoulder
+    100118: lil_guy16:RightShoulderBlade
+    100120: lil_guy16:RightWrist
+    100122: lil_guy16:transform3
+    100124: Neck
+    100126: PaperMan
+    100128: Paperman
+    100130: pCube10
+    100132: pCube11
+    100134: pCube12
+    100136: pCube8
+    100138: pCube9
+    100140: persp1
+    100142: pSphere1
+    100144: pSphere2
+    100146: pSphere3
+    100148: RightElbow
+    100150: RightFinger
+    100152: RightHand
+    100154: RightLeg
+    100156: RightShoulder
+    100158: RightShoulderBlade
+    100160: RightWrist
+    100162: sunDirection
+    100164: transform1
+    100166: transform2
+    100168: transform3
+    100170: transform4
+    100172: transform5
+    400000: FrightFoot
+    400002: Head
+    400004: Hips
+    400006: ikHandle1
+    400008: ikHandle2
+    400010: joint1
+    400012: joint2
+    400014: joint3
+    400016: joint4
+    400018: joint6
+    400020: joint6 1
+    400022: joint7
+    400024: joint7 1
+    400026: joint8
+    400028: joint8 1
+    400030: joint9
+    400032: joint9 1
+    400034: LeftElbow
+    400036: LeftFinger
+    400038: LeftFoot
+    400040: LeftHand
+    400042: LeftLeg
+    400044: LeftShoulder
+    400046: LeftShoulderBlade
+    400048: LeftWrist
+    400050: //RootNode
+    400052: lil_guy16:FrightFoot
+    400054: lil_guy16:Head
+    400056: lil_guy16:Hips
+    400058: lil_guy16:ikHandle1
+    400060: lil_guy16:ikHandle2
+    400062: lil_guy16:joint1
+    400064: lil_guy16:joint2
+    400066: lil_guy16:joint3
+    400068: lil_guy16:joint4
+    400070: lil_guy16:joint6
+    400072: lil_guy16:joint6 1
+    400074: lil_guy16:joint7
+    400076: lil_guy16:joint7 1
+    400078: lil_guy16:joint8
+    400080: lil_guy16:joint8 1
+    400082: lil_guy16:joint9
+    400084: lil_guy16:joint9 1
+    400086: lil_guy16:LeftElbow
+    400088: lil_guy16:LeftFinger
+    400090: lil_guy16:LeftFoot
+    400092: lil_guy16:LeftHand
+    400094: lil_guy16:LeftLeg
+    400096: lil_guy16:LeftShoulder
+    400098: lil_guy16:LeftShoulderBlade
+    400100: lil_guy16:LeftWrist
+    400102: lil_guy16:Neck
+    400104: lil_guy16:PaperMan
+    400106: lil_guy16:Paperman
+    400108: lil_guy16:RightElbow
+    400110: lil_guy16:RightFinger
+    400112: lil_guy16:RightHand
+    400114: lil_guy16:RightLeg
+    400116: lil_guy16:RightShoulder
+    400118: lil_guy16:RightShoulderBlade
+    400120: lil_guy16:RightWrist
+    400122: lil_guy16:transform3
+    400124: Neck
+    400126: PaperMan
+    400128: Paperman
+    400130: pCube10
+    400132: pCube11
+    400134: pCube12
+    400136: pCube8
+    400138: pCube9
+    400140: persp1
+    400142: pSphere1
+    400144: pSphere2
+    400146: pSphere3
+    400148: RightElbow
+    400150: RightFinger
+    400152: RightHand
+    400154: RightLeg
+    400156: RightShoulder
+    400158: RightShoulderBlade
+    400160: RightWrist
+    400162: sunDirection
+    400164: transform1
+    400166: transform2
+    400168: transform3
+    400170: transform4
+    400172: transform5
+    2300000: pCube10
+    2300002: pCube11
+    2300004: pCube12
+    2300006: pSphere3
+    3300000: pCube10
+    3300002: pCube11
+    3300004: pCube12
+    3300006: pSphere3
+    4300000: pSphere3
+    4300002: pCube10
+    4300004: Paperman
+    4300006: lil_guy16:Paperman
+    4300008: pCube11
+    4300010: pCube12
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: lil_guy16:Paperman
+    13700002: Paperman
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
