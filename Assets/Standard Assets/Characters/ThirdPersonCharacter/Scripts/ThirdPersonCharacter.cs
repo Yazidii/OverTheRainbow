@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -37,7 +38,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Vector3 m_CapsuleCenter;
         CapsuleCollider m_Capsule;
         bool m_Crouching;
-        private GameObject puzzleGate1;
+        private List<string> puzzlePieceTags = new List<string>();
+         
 
         void Start()
         {
@@ -49,7 +51,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
-            puzzleGate1 = GameObject.FindWithTag("redGate");
+            puzzlePieceTags.AddRange(new List<string>{
+                "red", "green", "yellow", "blue"
+            });
+
         }
 
 
@@ -212,12 +217,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         void OnTriggerEnter(Collider other)
         {
 
-            if (other.gameObject.CompareTag("redSpin"))
+            if (puzzlePieceTags.Contains(other.gameObject.tag))
             {
 
                 other.gameObject.SetActive(false);
 
-                puzzleGate1.GetComponent<MeshRenderer>().enabled = true;
+                GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
 
             }
         }
