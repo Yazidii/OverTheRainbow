@@ -9,34 +9,58 @@ public class Footsteps : MonoBehaviour {
     public Transform rightFootLocation;
     public AudioSource leftFootAudioSource;
     public AudioSource rightFootAudioSource;
+    public GameObject character;
 
-    void LeftFootstep()
+    private float raycastDistance = 0.08f;
+
+    void LeftFootstep(string input)
     {
-        leftFootAudioSource.Play();
+        Debug.Log(input);
 
         //Raycast out and create footprint
         RaycastHit hit;
-
-        if(Physics.Raycast(leftFootLocation.position, leftFootLocation.forward, out hit))
-        {
-            Instantiate(leftFootprint, hit.point, Quaternion.LookRotation(hit.normal, leftFootLocation.up));
+        if (!(input.Contains("Walk") && !Input.GetKey(KeyCode.LeftShift)) && !(input.Contains("Run") && Input.GetKey(KeyCode.LeftShift)))
+            {
+            if (Physics.Raycast(leftFootLocation.position + Vector3.up * raycastDistance, Vector3.down, out hit, 2 * raycastDistance))
+            {
+                leftFootAudioSource.Play();
+                Instantiate(leftFootprint, hit.point, Quaternion.LookRotation(character.transform.forward, hit.normal));
+            }
         }
     }
 
-    void RightFootstep()
+    void RightFootstep(string input)
     {
-        rightFootAudioSource.Play();
+        Debug.Log(input);
 
         //Raycast out and create footprint
         RaycastHit hit;
 
-        if (Physics.Raycast(rightFootLocation.position, rightFootLocation.forward, out hit))
-        {
-            Instantiate(rightFootprint, hit.point, Quaternion.LookRotation(hit.normal, rightFootLocation.up));
+
+        if (!(input.Contains("Walk") && !Input.GetKey(KeyCode.LeftShift)) && !(input.Contains("Run") && Input.GetKey(KeyCode.LeftShift)))
+            {
+            if (Physics.Raycast(rightFootLocation.position + Vector3.up * raycastDistance, Vector3.down, out hit, 2 * raycastDistance))
+            {
+                rightFootAudioSource.Play();
+                Instantiate(rightFootprint, hit.point, Quaternion.LookRotation(character.transform.forward, hit.normal));
+            }
         }
+    }
+
+    void Update()
+    {
+        Debug.DrawLine(leftFootLocation.position, leftFootLocation.position + Vector3.down * raycastDistance);
+        Debug.DrawLine(rightFootLocation.position, rightFootLocation.position + Vector3.down * raycastDistance);
     }
 }
 
+/*
+// helper to visualise the ground check ray in the scene view
+Debug.DrawLine(transform.position + (Vector3.up* 0.1f), transform.position + (Vector3.up* 0.1f) + (Vector3.down* m_GroundCheckDistance));
+#endif
+            // 0.1f is a small offset to start the ray from inside the character
+            // it is also good to note that the transform position in the sample assets is at the base of the character
+            if (Physics.Raycast(transform.position + (Vector3.up* 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
 
 /*
  * using UnityEngine;
