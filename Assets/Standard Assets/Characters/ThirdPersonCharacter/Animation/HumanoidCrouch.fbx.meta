@@ -265,11 +265,36 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: Curve
+        curve:
+          serializedVersion: 2
+          curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 0
       events:
-      - time: 0.86519605
+      - time: 0.44230768
+        functionName: RightFootstep
+        data: Crouch Right
+        objectReferenceParameter: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.92288834
         functionName: LeftFootstep
-        data: 
+        data: Crouch Left
         objectReferenceParameter: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce,
           type: 2}
         floatParameter: 0

@@ -520,11 +520,17 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.85048985
+      - time: 0.44780222
+        functionName: RightFootstep
+        data: Walk Right
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.94205517
         functionName: LeftFootstep
-        data: 
-        objectReferenceParameter: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce,
-          type: 2}
+        data: Walk Left
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
