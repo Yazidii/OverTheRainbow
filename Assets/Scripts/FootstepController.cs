@@ -7,9 +7,11 @@ public class FootstepController : MonoBehaviour {
     public float maxDistance = 120f;
     private List<string> puzzlePieceTags = new List<string>();
     GameObject closestPiece;
+    public float awakeForSeconds = 2f;
 
     // Use this for initialization
     void Start () {
+        Renderer rend = GetComponent<Renderer>();
         puzzlePieceTags.AddRange(new List<string>{
                 "red", "green", "yellow", "blue"
             });
@@ -32,16 +34,25 @@ public class FootstepController : MonoBehaviour {
             Color pieceColor = closestPiece.GetComponent<Renderer>().material.color;
             Color footstepColor = Color.Lerp(pieceColor, Color.black, distanceRatio);
 
-            Renderer rend = GetComponent<Renderer>();
+            
             rend.material.shader = Shader.Find("Standard");
             rend.material.SetColor("_Color", footstepColor);
             rend.material.SetColor("_Emission", footstepColor);
         }
 
+        StartCoroutine(DestroyAfterSeconds(awakeForSeconds));
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
+	   
 	}
+
+    IEnumerator DestroyAfterSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Destroy(gameObject);
+    }
+
 }
