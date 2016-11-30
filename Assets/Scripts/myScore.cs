@@ -31,6 +31,7 @@ public class myScore : MonoBehaviour {
                 count++;
         }
 
-        scoreText.text = string.Format("Found {0}/{1}", count, maxScore); 
+        scoreText.text = string.Format("Found {0}/{1}", count, maxScore);
     }
+
 }
