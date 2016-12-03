@@ -22,7 +22,7 @@ public class FootstepController : MonoBehaviour {
         {
             var puzzlePiece = GameObject.FindGameObjectWithTag(tag);
             if (puzzlePiece != null)
-                if (Vector3.Distance(transform.position, puzzlePiece.transform.position) < closestPieceDistance)
+                if (Vector3.Distance(transform.position, puzzlePiece.transform.position) < closestPieceDistance && puzzlePiece.GetComponent<MeshRenderer>().enabled)
                 {
                     closestPieceDistance = Vector3.Distance(transform.position, puzzlePiece.transform.position);
                     closestPiece = puzzlePiece;

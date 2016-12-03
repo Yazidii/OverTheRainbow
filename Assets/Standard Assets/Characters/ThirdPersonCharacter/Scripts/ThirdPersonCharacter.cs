@@ -219,9 +219,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
 
                 other.gameObject.SetActive(false);
-
+                
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
 
+            }
+            if (other.gameObject.tag == "button")
+            {
+                other.GetComponent<buttonController>().PressButton();
             }
         }
 

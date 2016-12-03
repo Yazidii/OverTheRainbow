@@ -5,7 +5,8 @@ public class puzzleSpin : MonoBehaviour
 {
 
     public float speed;
-
+    public GameObject button;
+    
 
     // Use this for initialization
     void Start()
@@ -18,7 +19,11 @@ public class puzzleSpin : MonoBehaviour
     {
 
         transform.Rotate(new Vector3(180, 0, 0) * Time.deltaTime * speed);
-
+        if (button != null)
+        {
+            transform.GetComponent<MeshRenderer>().enabled = button.GetComponent<buttonController>().isPressed;
+            transform.GetComponent<Collider>().enabled = button.GetComponent<buttonController>().isPressed;
+        }
 
     }
 }
