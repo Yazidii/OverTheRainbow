@@ -64,7 +64,7 @@ public class NSmoothMove : MonoBehaviour
 
         if (player != null)
         {
-            Vector3 playerPosition = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
+            Vector3 playerPosition = player.transform.position + Vector3.up * 8.7f;
             if (Vector3.Distance(playerPosition, transform.position) < aggroDistance)
             {
                 targetToFollow = playerPosition;
