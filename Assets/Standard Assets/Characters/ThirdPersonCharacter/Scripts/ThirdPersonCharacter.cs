@@ -217,10 +217,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (puzzlePieceTags.Contains(other.gameObject.tag))
             {
-
-                other.gameObject.SetActive(false);
-                
+                               
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
+                Destroy(other.gameObject);
 
             }
             if (other.gameObject.tag == "button")
