@@ -40,6 +40,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         bool m_Crouching;
         private List<string> puzzlePieceTags = new List<string>();
 
+		public AudioSource audioSource;
+
         void Start()
         {
             m_Animator = GetComponent<Animator>();
@@ -220,6 +222,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                                
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
                 Destroy(other.gameObject);
+				audioSource.Play();
 
             }
             if (other.gameObject.tag == "button")

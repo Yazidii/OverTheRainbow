@@ -8,6 +8,8 @@ public class buttonController : MonoBehaviour
     public float buttonHeight = 0.2f;
     public bool isPressed = false;
     private Vector3 targetPosition;
+	public AudioSource audioSource_button;
+	public AudioSource audioSource_gate;
     // Use this for initialization
     void Start()
     {
@@ -26,6 +28,7 @@ public class buttonController : MonoBehaviour
         if (isPressed)
         {
             targetPosition = buttonBottom.transform.position;
+
         }
         else
         {
@@ -37,6 +40,8 @@ public class buttonController : MonoBehaviour
     public void PressButton()
     {
         isPressed = true;
+		audioSource_button.Play();
+		audioSource_gate.Play();
     }
     
 }

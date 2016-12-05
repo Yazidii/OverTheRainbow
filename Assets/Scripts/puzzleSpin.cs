@@ -32,6 +32,7 @@ public class puzzleSpin : MonoBehaviour
         foreach (GameObject spotLight in spotLightsToDestroy)
         {
             Destroy(spotLight);
+	
         }
     }
 }
