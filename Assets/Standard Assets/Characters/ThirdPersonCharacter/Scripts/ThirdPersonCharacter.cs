@@ -55,6 +55,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             puzzlePieceTags.AddRange(new List<string>{
                 "red", "green", "yellow", "blue"
             });
+            gameState.isCaught = false;
+            if (gameState.checkpointSaved)
+            {   
+                transform.position = gameState.savedLocation;
+                foreach (string piece in gameState.collectedPuzzles)
+                    if (puzzlePieceTags.Contains(piece))
+                    {
+                        GameObject puzzlePiece = GameObject.FindGameObjectsWithTag(piece + "Gate")[0];
+                        puzzlePiece.GetComponent<MeshRenderer>().enabled = true;
+                        Destroy(GameObject.FindGameObjectWithTag(piece));
+                    }
+            }
+            else
+            {
+                gameState.collectedPuzzles = new List<string>();
+            }
         }
 
 
@@ -217,7 +233,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         void OnTriggerEnter(Collider other)
         {
 
-            if (puzzlePieceTags.Contains(other.gameObject.tag))
+            if (puzzlePieceTags.Contains(other.gameObject.tag) && !(GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate") == null || GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate").Length == 0))
             {
                                
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;

@@ -26,7 +26,7 @@ public class myScore : MonoBehaviour {
 	void Update () {
         int count = 0;
         foreach (string puzzlePieceTag in puzzlePieceTags)
-        {
+        {if (!(GameObject.FindGameObjectsWithTag(puzzlePieceTag) == null || GameObject.FindGameObjectsWithTag(puzzlePieceTag).Length == 0))
             if (GameObject.FindGameObjectsWithTag(puzzlePieceTag)[0].GetComponent<MeshRenderer>().enabled == true)
                 count++;
         }

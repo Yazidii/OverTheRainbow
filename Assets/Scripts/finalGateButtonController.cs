@@ -21,6 +21,7 @@ public class finalGateButtonController : MonoBehaviour {
         bool result = true;
         foreach (GameObject piece in list)
         {
+            if (piece != null)
             if (!piece.GetComponent<MeshRenderer>().enabled) result = false;
         }
         return result;

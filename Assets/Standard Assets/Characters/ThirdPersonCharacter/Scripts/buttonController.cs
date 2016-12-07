@@ -13,7 +13,16 @@ public class buttonController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        if (gameState.checkpointSaved)
+        {
+            foreach (string button in gameState.pushedButtons)
+            {
+                if (button == transform.parent.gameObject.name)
+                {
+                    PressButtonLoad();
+                }
+            }
+        }
         transform.position = buttonBottom.transform.position + transform.up * buttonHeight;
 
     }
@@ -39,9 +48,16 @@ public class buttonController : MonoBehaviour
 
     public void PressButton()
     {
+        if (!gameState.checkpointSaved)
+        gameState.pushedButtons.Add(transform.parent.gameObject.name);
         isPressed = true;
 		audioSource_button.Play();
 		audioSource_gate.Play();
+    }
+
+    private void PressButtonLoad()
+    {
+        isPressed = true;
     }
     
 }

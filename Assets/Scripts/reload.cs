@@ -21,6 +21,7 @@ public class reload : MonoBehaviour
     public void loadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        if (GOCanvas != null)
         GOCanvas.GetComponent<Canvas>().enabled = false;
         Cursor.visible = false;
     }
@@ -30,8 +31,10 @@ public class reload : MonoBehaviour
         //SceneManager.GetActiveScene();
         //SceneManager.LoadScene("MainScene22");
         int scene = SceneManager.GetActiveScene().buildIndex;
+        gameState.isCaught = true;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
-        GOCanvas.GetComponent<Canvas>().enabled = false;
+        if (GOCanvas != null)
+            GOCanvas.GetComponent<Canvas>().enabled = false;
         Cursor.visible = false;
     }
 }

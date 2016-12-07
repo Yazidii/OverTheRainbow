@@ -29,10 +29,21 @@ public class puzzleSpin : MonoBehaviour
 
     void OnDestroy()
     {
+        if (!gameState.checkpointSaved && !gameState.isCaught)
+        {
+            gameState.collectedPuzzles.Add(transform.tag);
+            gameState.checkpointSaved = gameState.collectedPuzzles.Count == 2;
+
+            if (gameState.checkpointSaved)
+            {
+                gameState.savedLocation = GameObject.FindGameObjectWithTag("Player").transform.position;
+            }
+        }
+
         foreach (GameObject spotLight in spotLightsToDestroy)
         {
             Destroy(spotLight);
-	
+	        
         }
     }
 }
