@@ -8,6 +8,7 @@ public class myTimer : MonoBehaviour {
     public float seconds = 59;
     public float minutes = 0;
     private  Text timerText;
+    public Canvas GOCanvas;
 
     void Start()
     {
@@ -48,7 +49,9 @@ public class myTimer : MonoBehaviour {
         if (seconds == 0 && minutes == 0)
         {
             Time.timeScale = 0;
-            SceneManager.LoadScene("GOMenu");
+            //SceneManager.LoadScene("GOMenu");
+            GOCanvas.GetComponent<Canvas>().enabled = true;
+            Cursor.visible = true;
         }
     }
 

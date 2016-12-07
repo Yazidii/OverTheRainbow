@@ -8,6 +8,7 @@ public class Spotted : MonoBehaviour
 
     ThirdPersonUserControl userControl;
     //public float DelayTime = 3.0f;
+    public Canvas GOCanvas;
 
     // Use this for initialization
     void Start()
@@ -29,6 +30,8 @@ public class Spotted : MonoBehaviour
             //Destroy(other.gameObject);
             userControl.ChangeCaughtState(true);
             //Wait();
+            GOCanvas.GetComponent<Canvas>().enabled = true;
+            Cursor.visible = true;
         }
     }
 

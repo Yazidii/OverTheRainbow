@@ -4,6 +4,7 @@ using System.Collections;
 
 public class reload : MonoBehaviour
 {
+    public Canvas GOCanvas;
 
     // Use this for initialization
     void Start()
@@ -20,10 +21,17 @@ public class reload : MonoBehaviour
     public void loadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        GOCanvas.GetComponent<Canvas>().enabled = false;
+        Cursor.visible = false;
     }
 
     public void reloadLevel()
     {
-        SceneManager.LoadScene("MainScenev22");
+        //SceneManager.GetActiveScene();
+        //SceneManager.LoadScene("MainScene22");
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        GOCanvas.GetComponent<Canvas>().enabled = false;
+        Cursor.visible = false;
     }
 }
