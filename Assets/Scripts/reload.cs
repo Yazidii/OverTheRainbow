@@ -24,6 +24,6 @@ public class reload : MonoBehaviour
 
     public void reloadLevel()
     {
-        SceneManager.LoadScene("MainScenev12");
+        SceneManager.LoadScene("MainScenev22");
     }
 }
