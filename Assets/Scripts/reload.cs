@@ -5,6 +5,7 @@ using System.Collections;
 public class reload : MonoBehaviour
 {
     public Canvas GOCanvas;
+    Color tmp;
 
     // Use this for initialization
     void Start()
@@ -35,6 +36,11 @@ public class reload : MonoBehaviour
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
         if (GOCanvas != null)
             GOCanvas.GetComponent<Canvas>().enabled = false;
+
+        //tmp = GOCanvas.GetComponent<SpriteRenderer>().color;
+        //tmp.a = 0f;
+        //GOCanvas.GetComponent<SpriteRenderer>().color = tmp;
+
         Cursor.visible = false;
     }
 }
