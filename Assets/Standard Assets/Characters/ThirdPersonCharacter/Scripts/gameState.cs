@@ -8,7 +8,6 @@ public class gameState : MonoBehaviour {
     static public Vector3 savedLocation;
     static public List<string> collectedPuzzles;
     static public List<string> pushedButtons;
-    static public bool isCaught = false;
 
     static gameState()
     {

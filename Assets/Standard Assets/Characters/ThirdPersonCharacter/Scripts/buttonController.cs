@@ -51,8 +51,12 @@ public class buttonController : MonoBehaviour
         if (!gameState.checkpointSaved)
         gameState.pushedButtons.Add(transform.parent.gameObject.name);
         isPressed = true;
-		audioSource_button.Play();
-		audioSource_gate.Play();
+
+        if (audioSource_button != null)
+		    audioSource_button.Play();
+
+        if (audioSource_gate != null)
+            audioSource_gate.Play();
     }
 
     private void PressButtonLoad()

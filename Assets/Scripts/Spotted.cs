@@ -7,7 +7,7 @@ public class Spotted : MonoBehaviour
 {
 
     ThirdPersonUserControl userControl;
-    private float DelayTime = 3.0f;
+    private float DelayTime = 2.0f;
     public Canvas GOCanvas;
 
     // Use this for initialization
@@ -27,7 +27,7 @@ public class Spotted : MonoBehaviour
         if (other.gameObject.CompareTag("Spotlight"))
         {
             userControl.ChangeCaughtState(true);          
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(DelayTime);
             Time.timeScale = 0;
             GOCanvas.GetComponent<Canvas>().enabled = true;
             Cursor.visible = true;

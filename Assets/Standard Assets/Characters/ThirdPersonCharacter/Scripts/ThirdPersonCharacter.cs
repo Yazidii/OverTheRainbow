@@ -56,7 +56,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             puzzlePieceTags.AddRange(new List<string>{
                 "red", "green", "yellow", "blue"
             });
-            gameState.isCaught = false;
+            
             if (gameState.checkpointSaved)
             {   
                 transform.position = gameState.savedLocation;
@@ -71,6 +71,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             else
             {
                 gameState.collectedPuzzles = new List<string>();
+                gameState.pushedButtons = new List<string>();
             }
         }
 
@@ -238,6 +239,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                                
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
+                other.gameObject.GetComponent<puzzleSpin>().Collect();
                 Destroy(other.gameObject);
 				audioSource.Play();
 

@@ -27,9 +27,9 @@ public class puzzleSpin : MonoBehaviour
         }
     }
 
-    void OnDestroy()
+    public void Collect()
     {
-        if (!gameState.checkpointSaved && !gameState.isCaught)
+        if (!gameState.checkpointSaved)
         {
             gameState.collectedPuzzles.Add(transform.tag);
             gameState.checkpointSaved = gameState.collectedPuzzles.Count == 2;
@@ -43,7 +43,7 @@ public class puzzleSpin : MonoBehaviour
         foreach (GameObject spotLight in spotLightsToDestroy)
         {
             Destroy(spotLight);
-	        
+
         }
     }
 }

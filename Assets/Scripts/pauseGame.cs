@@ -36,23 +36,28 @@ public class pauseGame : MonoBehaviour {
 
     public void loadMenu()
     {
+        Time.timeScale = 1;
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        Cursor.visible = false;
+        pauseToggle = false;
+        gameState.checkpointSaved = false;
         SceneManager.LoadScene("MainMenu");
     }
 
-    /*public void Resume()
+    public void Resume()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         pauseCanvas.GetComponent<Canvas>().enabled = false;
         Cursor.visible = false;
-        pauseToggle = !pauseToggle;
+        pauseToggle = false;
     }
-
+    /*
     public void reloadLevel()
     {
         //SceneManager.GetActiveScene();
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
-        //SceneManager.LoadScene("MainScene22");
+        //SceneManager.LoadScene("MainScene24");
     }*/
 
     public void quitGame()

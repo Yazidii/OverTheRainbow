@@ -34,12 +34,14 @@ public class pauseMenu : MonoBehaviour {
 
     public void loadMenu()
     {
+        Resume();
+        gameState.checkpointSaved = false;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Resume()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         pauseCanvas.GetComponent<Canvas>().enabled = false;
         Cursor.visible = false;
         pauseToggle = !pauseToggle;
@@ -47,9 +49,10 @@ public class pauseMenu : MonoBehaviour {
 
     public void reloadLevel()
     {
+        Resume();
         //SceneManager.GetActiveScene();
-        //SceneManager.LoadScene("MainScene22");        
-        SceneManager.LoadScene("MainScene22");
+        //SceneManager.LoadScene("MainScene24");        
+        SceneManager.LoadScene("MainScene24");
     }
 
     public void quitGame()

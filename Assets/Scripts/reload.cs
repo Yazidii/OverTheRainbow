@@ -21,6 +21,8 @@ public class reload : MonoBehaviour
 
     public void loadMainMenu()
     {
+        gameObject.GetComponent<pauseGame>().Resume();
+        gameState.checkpointSaved = false;
         SceneManager.LoadScene("MainMenu");
         if (GOCanvas != null)
         GOCanvas.GetComponent<Canvas>().enabled = false;
@@ -29,10 +31,10 @@ public class reload : MonoBehaviour
 
     public void reloadLevel()
     {
+        gameObject.GetComponent<pauseGame>().Resume();
         //SceneManager.GetActiveScene();
-        //SceneManager.LoadScene("MainScene22");
+        //SceneManager.LoadScene("MainScene24");
         int scene = SceneManager.GetActiveScene().buildIndex;
-        gameState.isCaught = true;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
         if (GOCanvas != null)
             GOCanvas.GetComponent<Canvas>().enabled = false;
