@@ -7,14 +7,13 @@ public class Spotted : MonoBehaviour
 {
 
     ThirdPersonUserControl userControl;
-    //public float DelayTime = 3.0f;
+    private float DelayTime = 3.0f;
     public Canvas GOCanvas;
 
     // Use this for initialization
     void Start()
     {
         userControl = GetComponentInParent<ThirdPersonUserControl>();
-    //    StartCoroutine("Wait");
     }
 
     // Update is called once per frame
@@ -23,24 +22,17 @@ public class Spotted : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    IEnumerator OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Spotlight"))
         {
-            //Destroy(other.gameObject);
-            userControl.ChangeCaughtState(true);
-            //Wait();
+            userControl.ChangeCaughtState(true);          
+            yield return new WaitForSeconds(2);
+            Time.timeScale = 0;
             GOCanvas.GetComponent<Canvas>().enabled = true;
             Cursor.visible = true;
         }
     }
-
-    //public IEnumerator Wait()
-    //{
-    //    yield return new WaitForSeconds(DelayTime);
-
-    //    SceneManager.LoadScene("GOMenu");
-    //}
 }
 
 

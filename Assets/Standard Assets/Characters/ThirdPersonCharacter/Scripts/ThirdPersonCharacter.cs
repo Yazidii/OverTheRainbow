@@ -41,6 +41,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private List<string> puzzlePieceTags = new List<string>();
 
 		public AudioSource audioSource;
+        public Canvas WinCanvas;
 
         void Start()
         {
@@ -244,6 +245,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (other.gameObject.tag == "button")
             {
                 other.GetComponent<buttonController>().PressButton();
+            }
+
+            if(other.gameObject.CompareTag("ending"))
+            {
+                Time.timeScale = 0;
+                WinCanvas.GetComponent<Canvas>().enabled = true;
             }
         }
 
