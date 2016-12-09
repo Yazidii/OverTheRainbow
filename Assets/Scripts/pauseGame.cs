@@ -39,7 +39,7 @@ public class pauseGame : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void Resume()
+    /*public void Resume()
     {
         Time.timeScale = 0;
         pauseCanvas.GetComponent<Canvas>().enabled = false;
@@ -53,7 +53,7 @@ public class pauseGame : MonoBehaviour {
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
         //SceneManager.LoadScene("MainScene22");
-    }
+    }*/
 
     public void quitGame()
     {
