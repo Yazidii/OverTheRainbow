@@ -16,6 +16,6 @@ public class startGame : MonoBehaviour {
 
     public void loadgame()
     {
-        SceneManager.LoadScene("MainScenev24");
+        SceneManager.LoadScene("IntroVideo");
     }
 }
