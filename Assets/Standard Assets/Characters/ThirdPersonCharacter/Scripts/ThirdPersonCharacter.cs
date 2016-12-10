@@ -241,7 +241,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
                 other.gameObject.GetComponent<puzzleSpin>().Collect();
                 Destroy(other.gameObject);
-				audioSource.Play();
+                audioSource.volume = 0.1f;
+                audioSource.Play();
 
             }
             if (other.gameObject.tag == "button")

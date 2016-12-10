@@ -43,7 +43,7 @@ public class buttonController : MonoBehaviour
         {
             targetPosition = buttonBottom.transform.position + transform.up * buttonHeight;
         }
-
+        
     }
 
     public void PressButton()
@@ -51,6 +51,7 @@ public class buttonController : MonoBehaviour
         if (!gameState.checkpointSaved)
         gameState.pushedButtons.Add(transform.parent.gameObject.name);
         isPressed = true;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
 
         if (audioSource_button != null)
 		    audioSource_button.Play();
@@ -62,6 +63,7 @@ public class buttonController : MonoBehaviour
     private void PressButtonLoad()
     {
         isPressed = true;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
     }
     
 }
