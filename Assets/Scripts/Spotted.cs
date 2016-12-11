@@ -7,7 +7,7 @@ public class Spotted : MonoBehaviour
 {
 
     ThirdPersonUserControl userControl;
-    private float DelayTime = 2.0f;
+    private float DelayTime = 1.5f;
     public Canvas GOCanvas;
 
     // Use this for initialization
