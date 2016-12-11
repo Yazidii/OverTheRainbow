@@ -254,6 +254,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 Time.timeScale = 0;
                 WinCanvas.GetComponent<Canvas>().enabled = true;
+                WinCanvas.GetComponent<AudioSource>().enabled = true;
             }
         }
 
