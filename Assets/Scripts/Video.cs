@@ -8,7 +8,7 @@ public class Video : MonoBehaviour {
     private GameObject imgTwo;
     private GameObject imgThree;
     private GameObject imgFour;
-    private GameObject fading;
+ 
     public string sceneName = "LevelName";
     private float TimeT;
 
@@ -19,7 +19,6 @@ public class Video : MonoBehaviour {
         imgTwo = GameObject.FindGameObjectWithTag("secondImg");
         imgThree = GameObject.FindGameObjectWithTag("thirdImg");
         imgFour = GameObject.FindGameObjectWithTag("fourthImg");
-        fading = GameObject.FindGameObjectWithTag("blackImg");
 
 
         TimeT = 0;
