@@ -57,36 +57,4 @@ public class Footsteps : MonoBehaviour {
     }
 }
 
-/*
-// helper to visualise the ground check ray in the scene view
-Debug.DrawLine(transform.position + (Vector3.up* 0.1f), transform.position + (Vector3.up* 0.1f) + (Vector3.down* m_GroundCheckDistance));
-#endif
-            // 0.1f is a small offset to start the ray from inside the character
-            // it is also good to note that the transform position in the sample assets is at the base of the character
-            if (Physics.Raycast(transform.position + (Vector3.up* 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
 
-/*
- * using UnityEngine;
-using System.Collections;
-
-public class Splat2D : MonoBehaviour {
-
-    private Color color;
-    public float destroySpeed = 0.2f;
-
-	// Use this for initialization
-	void Start () {
-        color = GetComponent<SpriteRenderer>().color;	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, color.a -= destroySpeed * Time.deltaTime);
-
-        if (color.a <= 0) {
-            Destroy(gameObject);
-        }
-	}
-}
-
- */

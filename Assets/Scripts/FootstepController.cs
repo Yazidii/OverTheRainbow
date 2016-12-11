@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class FootstepController : MonoBehaviour {
 
-    public float maxDistance = 120f;
+    public float maxDistance = 100f;
     private List<string> puzzlePieceTags = new List<string>();
     GameObject closestPiece;
     public float awakeForSeconds = 2f;
@@ -16,7 +16,7 @@ public class FootstepController : MonoBehaviour {
                 "red", "green", "yellow", "blue"
             });
 
-        float closestPieceDistance = 99999999f;
+        float closestPieceDistance = maxDistance;
 
         foreach (string tag in puzzlePieceTags)
         {
