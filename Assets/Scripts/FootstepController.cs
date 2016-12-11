@@ -11,13 +11,16 @@ public class FootstepController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        //get footstep renderer
         Renderer rend = GetComponent<Renderer>();
+        //add puzzle tags to list
         puzzlePieceTags.AddRange(new List<string>{
                 "red", "green", "yellow", "blue"
             });
 
         float closestPieceDistance = maxDistance;
 
+        //check which puzzle piece is the closest, give to clocestPiece object to assign footstep colour
         foreach (string tag in puzzlePieceTags)
         {
             var puzzlePiece = GameObject.FindGameObjectWithTag(tag);
@@ -28,9 +31,10 @@ public class FootstepController : MonoBehaviour {
                     closestPiece = puzzlePiece;
                 }
         }
+       //footstep colour gradient
         if (closestPiece != null)
         {
-            float distanceRatio = closestPieceDistance >= 120f ? 1f : closestPieceDistance/maxDistance;
+            float distanceRatio = closestPieceDistance >= maxDistance ? 1f : closestPieceDistance/maxDistance;
             Color pieceColor = closestPiece.GetComponent<Renderer>().material.color;
             Color footstepColor = Color.Lerp(pieceColor, Color.black, distanceRatio);
 
@@ -48,7 +52,7 @@ public class FootstepController : MonoBehaviour {
 	void Update () {
 	   
 	}
-
+    //after 2 seconds destroy footstep
     IEnumerator DestroyAfterSeconds(float seconds)
     {
         yield return new WaitForSeconds(seconds);

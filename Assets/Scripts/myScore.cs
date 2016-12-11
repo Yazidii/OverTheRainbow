@@ -24,13 +24,14 @@ public class myScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //counts number of collected pieces
         int count = 0;
         foreach (string puzzlePieceTag in puzzlePieceTags)
         {if (!(GameObject.FindGameObjectsWithTag(puzzlePieceTag) == null || GameObject.FindGameObjectsWithTag(puzzlePieceTag).Length == 0))
             if (GameObject.FindGameObjectsWithTag(puzzlePieceTag)[0].GetComponent<MeshRenderer>().enabled == true)
                 count++;
         }
-
+        //sets the score text to that number
         scoreText.text = string.Format("Found {0}/{1}", count, maxScore);
     }
 

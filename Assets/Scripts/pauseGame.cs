@@ -51,14 +51,7 @@ public class pauseGame : MonoBehaviour {
         Cursor.visible = false;
         pauseToggle = false;
     }
-    /*
-    public void reloadLevel()
-    {
-        //SceneManager.GetActiveScene();
-        int scene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(scene, LoadSceneMode.Single);
-        //SceneManager.LoadScene("MainScene24");
-    }*/
+
 
     public void quitGame()
     {

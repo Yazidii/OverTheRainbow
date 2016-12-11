@@ -15,10 +15,9 @@ public class Footsteps : MonoBehaviour {
 
     void LeftFootstep(string input)
     {
-        Debug.Log(input);
-
         //Raycast out and create footprint
         RaycastHit hit;
+        //check if the third person characyter is in the correct animation
         if (!(input.Contains("Walk") && !Input.GetKey(KeyCode.LeftShift)) && !(input.Contains("Run") && Input.GetKey(KeyCode.LeftShift)))
             {
             if (Physics.Raycast(leftFootLocation.position + Vector3.up * raycastDistance, Vector3.down, out hit, 2 * raycastDistance))
@@ -32,8 +31,6 @@ public class Footsteps : MonoBehaviour {
 
     void RightFootstep(string input)
     {
-        Debug.Log(input);
-
         //Raycast out and create footprint
         RaycastHit hit;
 
@@ -44,7 +41,6 @@ public class Footsteps : MonoBehaviour {
             {
                 rightFootAudioSource.volume = 0.08f;
                 rightFootAudioSource.Play();
-             
                 Instantiate(rightFootprint, hit.point, Quaternion.LookRotation(character.transform.forward, hit.normal));
             }
         }
@@ -52,8 +48,8 @@ public class Footsteps : MonoBehaviour {
 
     void Update()
     {
-        Debug.DrawLine(leftFootLocation.position, leftFootLocation.position + Vector3.down * raycastDistance);
-        Debug.DrawLine(rightFootLocation.position, rightFootLocation.position + Vector3.down * raycastDistance);
+        //Debug.DrawLine(leftFootLocation.position, leftFootLocation.position + Vector3.down * raycastDistance);
+       //Debug.DrawLine(rightFootLocation.position, rightFootLocation.position + Vector3.down * raycastDistance);
     }
 }
 

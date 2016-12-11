@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -56,7 +58,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             puzzlePieceTags.AddRange(new List<string>{
                 "red", "green", "yellow", "blue"
             });
-            
+            //load checkpoint
             if (gameState.checkpointSaved)
             {   
                 transform.position = gameState.savedLocation;
@@ -67,9 +69,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                         puzzlePiece.GetComponent<MeshRenderer>().enabled = true;
                         Destroy(GameObject.FindGameObjectWithTag(piece));
                     }
-            }
+            }//or not
             else
             {
+                gameState.checkpointDisplayed = false;
                 gameState.collectedPuzzles = new List<string>();
                 gameState.pushedButtons = new List<string>();
             }
@@ -244,6 +247,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 audioSource.volume = 0.1f;
                 audioSource.Play();
 
+                if (!gameState.checkpointDisplayed && gameState.checkpointSaved)
+                {
+                    gameState.checkpointDisplayed = true;
+                    GameObject.Find("checkpoint").GetComponent<Text>().enabled = true;
+                    StartCoroutine(DisableTextAfterSeconds());
+                }
+
             }
             if (other.gameObject.tag == "button")
             {
@@ -258,6 +268,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+        IEnumerator DisableTextAfterSeconds()
+        {
+            yield return new WaitForSeconds(2f);
+            GameObject.Find("checkpoint").GetComponent<Text>().enabled = false;
+        }
 
         void CheckGroundStatus()
         {

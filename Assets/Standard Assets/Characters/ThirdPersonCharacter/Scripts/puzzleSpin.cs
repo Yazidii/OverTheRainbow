@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class puzzleSpin : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class puzzleSpin : MonoBehaviour
     {
 
         transform.Rotate(new Vector3(180, 0, 0) * Time.deltaTime * speed);
+
+        //if puzzle has button it only appears once button is pressed
         if (button != null)
         {
             transform.GetComponent<MeshRenderer>().enabled = button.GetComponent<buttonController>().isPressed;
@@ -28,7 +31,7 @@ public class puzzleSpin : MonoBehaviour
     }
 
     public void Collect()
-    {
+    {   
         if (!gameState.checkpointSaved)
         {
             gameState.collectedPuzzles.Add(transform.tag);
@@ -40,6 +43,7 @@ public class puzzleSpin : MonoBehaviour
             }
         }
 
+        //destroy chosen spotlights once puzzle is picked up
         foreach (GameObject spotLight in spotLightsToDestroy)
         {
             Destroy(spotLight);

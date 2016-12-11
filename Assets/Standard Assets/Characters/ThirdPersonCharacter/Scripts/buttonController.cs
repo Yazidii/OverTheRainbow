@@ -46,6 +46,7 @@ public class buttonController : MonoBehaviour
         
     }
 
+    //play the sound, remove collider, add to the list of pressed buttons for checkpoint
     public void PressButton()
     {
         if (!gameState.checkpointSaved)

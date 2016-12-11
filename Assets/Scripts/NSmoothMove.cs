@@ -22,11 +22,13 @@ public class NSmoothMove : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //give the light first target from list
         if (pathList.Count != 0)
         {
             currentTarget = pathList[currentIndex];
             targetToFollow = currentTarget.position;
         }
+        //if list empty target is itself
         else
             targetToFollow = transform.position;
 
@@ -36,10 +38,11 @@ public class NSmoothMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //move light towards target
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, targetToFollow, step);
 
+        //determine next target to follow
         if (pathList.Count != 0)
         {
             if (Vector3.Distance(transform.position, currentTarget.position) == 0f)
@@ -61,7 +64,7 @@ public class NSmoothMove : MonoBehaviour
             if (!followLastKnownLocation)
                 targetToFollow = transform.position;
         }
-
+        //check if player is close enough to be approached
         if (player != null)
         {
             Vector3 playerPosition = player.transform.position + Vector3.up * 8.7f;
