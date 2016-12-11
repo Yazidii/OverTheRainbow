@@ -9,7 +9,7 @@ public class Spotted : MonoBehaviour
     ThirdPersonUserControl userControl;
     private float DelayTime = 1.5f;
     public Canvas GOCanvas;
-    public GameObject camera;
+    public GameObject spottedCamera;
 
     // Use this for initialization
     void Start()
@@ -32,7 +32,7 @@ public class Spotted : MonoBehaviour
             Time.timeScale = 0;
             GOCanvas.GetComponent<Canvas>().enabled = true;
             GOCanvas.GetComponent<AudioSource>().enabled = true;
-            camera.GetComponent<AudioSource>().enabled = false;
+            spottedCamera.GetComponent<AudioSource>().enabled = false;
             Cursor.visible = true;
         }
     }
