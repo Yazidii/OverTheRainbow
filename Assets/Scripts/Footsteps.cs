@@ -22,7 +22,7 @@ public class Footsteps : MonoBehaviour {
             {
             if (Physics.Raycast(leftFootLocation.position + Vector3.up * raycastDistance, Vector3.down, out hit, 2 * raycastDistance))
             {
-                leftFootAudioSource.volume = 0.08f;
+                leftFootAudioSource.volume = 0.2f;
                 leftFootAudioSource.Play();
                 Instantiate(leftFootprint, hit.point, Quaternion.LookRotation(character.transform.forward, hit.normal));
             }

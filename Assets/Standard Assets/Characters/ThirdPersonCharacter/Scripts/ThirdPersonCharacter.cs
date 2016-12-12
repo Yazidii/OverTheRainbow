@@ -244,7 +244,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 GameObject.FindGameObjectsWithTag(other.gameObject.tag + "Gate")[0].GetComponent<MeshRenderer>().enabled = true;
                 other.gameObject.GetComponent<puzzleSpin>().Collect();
                 Destroy(other.gameObject);
-                audioSource.volume = 0.1f;
+                audioSource.volume = 0.3f;
                 audioSource.Play();
 
                 if (!gameState.checkpointDisplayed && gameState.checkpointSaved)
